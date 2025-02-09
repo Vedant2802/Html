@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <img src="./img.jpg" width="300px" height="300px" alt="no image" />
+    <!-- For this picture tag we use this if we have to load different images for different devices-->
+    <!-- <picture> -->
+    <!-- <source media="(min-width:650px)" srcset="" /> -->
+    <!-- by default it will load the image inside the img tag-->
+    <!-- <img src="./img.jpg" alt="image" /> -->
+    <!-- </picture> -->
+    <!-- <map name=""></map> -->
+    <map name="image-path">
+      <area shape="" coords="" href="" alt="" onclick="one()" />
+    </map>
+    <script>
+      function one() {
+        alert("area clicked");
+      }
+    </script>
+  </body>
+</html>
