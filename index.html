@@ -3,15 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HTML Learning Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .section {
+        background: white;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .section h2 {
+        color: #333;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+      }
+      .nav-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+      }
+      .nav-item {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        border-left: 4px solid #007bff;
+        transition: transform 0.2s;
+      }
+      .nav-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .nav-item a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      .nav-item p {
+        margin: 5px 0 0 0;
+        font-size: 0.9em;
+        color: #666;
+      }
+    </style>
   </head>
   <body>
-    <!--add in title attribute insdide h1 here gives us toast kind of message with the string inside the colon on hover -->
-    <h1 title="name">Akshat Vedant</h1>
-    <a
-      href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjW0vyo_raLAxXSSmwGHVbcCAoQPAgI"
-      >Google</a
-    >
-    <!-- <a href="http://" target="_blank" rel="noopener noreferrer"></a> -->
+    <div class="header">
+      <h1 title="HTML Learning Project">HTML Learning Project</h1>
+      <p>A comprehensive collection of HTML examples and exercises</p>
+    </div>
+
+    <div class="section">
+      <h2>Main Pages</h2>
+      <div class="nav-grid">
+        <div class="nav-item">
+          <a href="Head.html">Head Elements</a>
+          <p>HTML head section examples and metadata</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>HTML Topics</h2>
+      <div class="nav-grid">
+        <div class="nav-item">
+          <a href="pages/formatting.html">Text Formatting</a>
+          <p>Bold, italic, underline, and other text styles</p>
+        </div>
+        <div class="nav-item">
+          <a href="pages/heading.html">Headings</a>
+          <p>H1 to H6 heading elements</p>
+        </div>
+        <div class="nav-item">
+          <a href="pages/list.html">Lists</a>
+          <p>Ordered, unordered, and definition lists</p>
+        </div>
+        <div class="nav-item">
+          <a href="pages/linkTags.html">Links</a>
+          <p>Anchor tags and hyperlinks</p>
+        </div>
+        <div class="nav-item">
+          <a href="pages/image.html">Images</a>
+          <p>Image elements and picture tags</p>
+        </div>
+        <div class="nav-item">
+          <a href="pages/media.html">Media</a>
+          <p>Audio and video elements</p>
+        </div>
+        <div class="nav-item">
+          <a href="pages/tables.html">Tables</a>
+          <p>Table structure and formatting</p>
+        </div>
+        <div class="nav-item">
+          <a href="pages/forms.html">Forms</a>
+          <p>Form elements and input types</p>
+        </div>
+        <div class="nav-item">
+          <a href="pages/input.html">Input Elements</a>
+          <p>Various input field types</p>
+        </div>
+        <div class="nav-item">
+          <a href="pages/semantics.html">Semantic HTML</a>
+          <p>Semantic elements and structure</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Revision & Practice</h2>
+      <div class="nav-grid">
+        <div class="nav-item">
+          <a href="Revision/forms_revision.html">Forms Practice</a>
+          <p>Form building exercises</p>
+        </div>
+        <div class="nav-item">
+          <a href="Revision/input_revison.html">Input Practice</a>
+          <p>Input element exercises</p>
+        </div>
+        <div class="nav-item">
+          <a href="Revision/iframe.html">Iframes</a>
+          <p>Inline frame examples</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Resources</h2>
+      <p>
+        <strong>External Link:</strong>
+        <a
+          href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjW0vyo_raLAxXSSmwGHVbcCAoQPAgI"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Google</a
+        >
+      </p>
+    </div>
   </body>
 </html>
